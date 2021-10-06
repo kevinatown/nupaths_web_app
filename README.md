@@ -1,1 +1,1 @@
-# nupaths_web_app
+# NuPaths
