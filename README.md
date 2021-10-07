@@ -14,7 +14,7 @@ This main document will contain some useful information, links, an overview of t
 ## Lessons
 1. [Week 1](https://github.com/kevinatown/nupaths_web_app/blob/main/week1/README.md)
     - [Day 2](https://github.com/kevinatown/nupaths_web_app/blob/main/week1/lessons/day2.md)
-    - Day 3
+    - [Day 3](https://github.com/kevinatown/nupaths_web_app/blob/main/week1/lessons/day3.md)
     - [Week 1 Project](https://github.com/kevinatown/nupaths_web_app/blob/main/week1/project/README.md)
 
 ## Useful information
