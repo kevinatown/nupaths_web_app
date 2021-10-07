@@ -47,9 +47,63 @@
 
 ## CSS
 - Overview of CSS
+  + CSS (Cascading Style Sheet) are used to apply styling to a rendered HTML page
+  + HTML does NOT apply styling
+  + Most browsers have a default styling for old HTML tags `h1`, `ol`, `table`, `b`, `i`
+    * These stylings *ARE NOT THE SAME ON EVERY BROWSER!!*
+    * Check out [Warren Buffet's Berkshire Hathaway site](https://www.berkshirehathaway.com/)
+      - You'll notice there are no CSS files downloaded
+      - If you vist this site in different browser you may see slightly different renderings.
+      - This is a throwback to the early days of the internet.
 - Writing CSS
+  + CSS can be written inline HTML, in a `<style>` tag, or in a sperate CSS file (there are other ways to write CSS/styling, but for now let's keep with these 3 :)
+  ![mock up with semantic HTML](https://github.com/kevinatown/nupaths_web_app/blob/main/resources/css_overview1.png?raw=true)
+  + CSS is written with the selector, brackets, property, and value, such as:
+    ```css
+      selector {
+        property: value;
+      }
+    ```
 - CSS Selectors
+  + CSS selectors tell the browser which element to "select" and apply the styling properties & values to.
+  + There are many different types of selectors, but we'll stick to 3 for now:
+    1. Id
+      - There should only be 1 ID per page/context, and should not be reused
+      - They should relate to **ONE** specific element
+      ```html
+        <style type="text/css">
+          #main-title {
+            color: #0000ff;
+          }
+        </style>
+        <h1 id="main-title">My title<</h1>
+      ```
+    2. Class
+      - These should be reused
+      - A good idea is to make a bunch of generic classes and reuse them (bootstrap does this) (e.g. setting text colors, font-size, padding, etc)
+      ```html
+        <style type="text/css">
+          .blue-txt-clr {
+            color: #0000ff;
+          }
+        </style>
+        <h1 class="blue-txt-clr">My title<</h1>
+      ```
+    3. Tag
+      - Tag selectors should be used for global styles. (e.g. you want all tags to have the same font or you want to set a global text color or background color).
+       ```html
+        <style type="text/css">
+          h1 {
+            color: #0000ff;
+          }
+        </style>
+        <h1>My title</h1>
+      ```
+  + In the above examples all of the CSS will do the same things. The importance is to pick the correct selector for the job.
+    * Being too general or specific can create visual bugs and heartaches, so be careful!
 - Specifing CSS
+  + CSS uses both HTML's nesting and specificity for determining styling.
+  + (I'll add more on this soon)
 - Questions
 
 ## Project Overview
