@@ -8,19 +8,70 @@
         background: #444;
         color: #fff;
       }
+      h1 {
+        color: white;
+      }
+
+
+      h1#main-header.red-txt-clr {
+        color: red;
+      }
+
+      /* 
+        #<id_name> = id selector 
+        .<class_name> = class selector
+        <tag_name> = tag selector
+      */
+      #main-header {
+        color: green;
+      }
+
+      .red-txt-clr {
+        color: red;
+      }
+
+      .blue-txt-clr {
+        color: blue;
+      }
+
+      #bio-pic {
+        width: 100%;
+      }
+      /*  */
+      div.blue-txt-clr {
+        font-size: 100px;
+      }
+
     </style>
+    
   </head>
 
   <body>
+
     <header>
-      <h1>
+      <h1 id="main-header" class='red-txt-clr'>
         Project 1
       </h1>
+      <nav>
+        <div>
+          <div class="red-txt-clr">Abuot</div>
+        </div>
+
+        <div >
+          <div >
+            Contact us
+          </div>
+        </div>
+      </nav>
     </header>
+    
     <main>
 
     </main>
+    
     <footer>
+
     </footer>
+
   </body>
 </html>

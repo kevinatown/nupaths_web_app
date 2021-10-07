@@ -3,17 +3,17 @@
 ## Initial Dev Enviroment Set Up
 1. [Install Visual Studio Code](https://code.visualstudio.com/Download)
     - make sure you get the right version for your machine (32 v 64)
-        ![download vs code](https://github.com/kevinatown/nupaths1/blob/main/resources/vs_code_download.png?raw=true)
+        ![download vs code](https://github.com/kevinatown/nupaths/blob/main/resources/vs_code_download.png?raw=true)
 2. [Install Node.js](https://nodejs.org/en/download/)
     - Pick the LTS (node-v14.x.x)
     - make sure you get the right version for your machine (32 v 64)
-        ![download node.js](https://github.com/kevinatown/nupaths1/blob/main/resources/node_js_download.png?raw=true)
+        ![download node.js](https://github.com/kevinatown/nupaths/blob/main/resources/node_js_download.png?raw=true)
 
 ## Project Enviroment Set Up
-1. [Download This Repository](https://github.com/kevinatown/nupaths1)
+1. [Download This Repository](https://github.com/kevinatown/nupaths)
     - Click on the breen "Code" button
     - Click on 'Download zip'
-        ![download zip image](https://github.com/kevinatown/nupaths1/blob/main/resources/github_zip_download.png?raw=true)
+        ![download zip image](https://github.com/kevinatown/nupaths/blob/main/resources/github_zip_download.png?raw=true)
     - Unzip the zipped directory
     - Move the directory to a location of your choosing (your new workspace)
 2. Open VS Code
@@ -24,7 +24,7 @@
 6. Open the intergrated VS Code terminal
     - View > Terminal
     - The terminal will open at the bottom
-    ![terminal overview](https://github.com/kevinatown/nupaths1/blob/main/resources/terminal.png?raw=true)
+    ![terminal overview](https://github.com/kevinatown/nupaths/blob/main/resources/terminal.png?raw=true)
     (**NOTE:** Your terminal will look different and may have a longer path
         e.g.)
         ```cmd
@@ -38,7 +38,7 @@
     ```
     - This will install node's `http-server` (which i was using) and someother tools to allow for hot-reloading, so that your web apps will reload on all CSS, HTML, and JS changes!
     (**NOTE:** You only really need to run `npm install` once for each project, however it doesnt hurt to run it again.)
-    ![npm install output](https://github.com/kevinatown/nupaths1/blob/main/resources/npmi_output.png?raw=true)
+    ![npm install output](https://github.com/kevinatown/nupaths/blob/main/resources/npmi_output.png?raw=true)
 
 ## Run the project!
 1. In the teminal run:
