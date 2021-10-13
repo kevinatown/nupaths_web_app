@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Project 1 My Dashboard hi</title>
+    <style type="text/css">
+      html {
+        background: #444;
+        color: #fff;
+      }
+
+      body {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header header"
+            "main main"
+            "footer footer";
+      }
+
+      header {
+        grid-area: header;
+        display: flex;
+        justify-content: center; 
+        width: 100%;
+      }
+
+      main {
+        grid-area: main;
+      }
+    
+      footer {
+        grid-area: footer;
+      }
+
+      /*@media screen and (min-width: 600px){
+        .row {
+          display: flex;
+          justify-content: space-evenly;
+        }   
+      }*/
+      
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .col-1 {
+        flex: 0 1 8.33%;  
+      }
+
+      .col-3 {
+        flex: 0 1 25%;
+      }
+
+      .col-4 {
+        flex: 0 1 33%;
+      }
+
+      .col-6 {
+        flex: 0 1 50%;
+      }
+
+      .col-12 {
+        flex: 0 1 100%;  
+      }
+
+      section {
+        border: white solid 1px;
+      }
+
+      .section-padding {
+        padding: 10px;
+        background: green;
+      }
+
+      .module-padding {
+        padding: 10px;
+        background: red;
+      }
+
+      .module-margin {
+        margin: 10px;
+        background: purple;
+      }
+
+      .stylish-title-p {
+        padding: 0 0 0 10px;
+        /* padding-left: 10px; */
+      }
+
+      .stylish-title-m {
+        margin: 0 0 0 10px;
+        /* margin-left: 10px; */
+      }
+
+      .title-with-icon-m {
+        margin-left: 10px;
+      }
+
+      #e1 {
+        background: yellow;
+        color: black;
+      }
+
+      #e2 {
+        background: lightblue;
+        color: black;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <p>
+        Margins v padding
+      </p>
+    </header>
+    <main>
+      <div class="row">
+        <section class="col-4">
+          <div class="module-padding">
+             <h2> I'm a title </h2>
+             <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </section>
+        <section class="col-4">
+          <div class="module-margin">
+            <h2> I'm a title </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </section>
+        <section class="col-4">
+          <h2> I'm a title </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          </p>
+        </section>
+      </div>
+
+      <div class="row">
+        <section class="col-4 section-padding">
+          <h2> I'm a title </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          </p>
+        </section>
+        <section class="col-4">
+          <h2 class="stylish-title-m"> I'm a title </h2>
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </section>
+        <section class="col-4">
+          <h2 class="stylish-title-p"> I'm a title </h2>
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </section>
+      </div>
+      <div class="row">
+        <section class="col-12">
+          <span id="e1"> I'm an element </span>
+          <span id="e2">
+            im another element
+          </span>
+        </section>
+      </div>
+
+    </main>
+    <footer>
+      <div>
+        <p>I'm a footer</p>
+      </div>
+    </footer>
+    
+  </body>
+</html>
