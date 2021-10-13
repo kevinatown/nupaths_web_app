@@ -33,13 +33,6 @@
       footer {
         grid-area: footer;
       }
-
-      /*@media screen and (min-width: 600px){
-        .row {
-          display: flex;
-          justify-content: space-evenly;
-        }   
-      }*/
       
       .row {
         display: flex;
@@ -109,6 +102,13 @@
         color: black;
       }
 
+      .descriptive-class-name {
+        color: rgb(255,255,255);
+        background: lightblue;
+        margin: 0;
+        text-align: center;
+      }
+
     </style>
   </head>
 
@@ -120,14 +120,17 @@
     </header>
     <main>
       <div class="row">
-        <section class="col-4">
-          <div class="module-padding">
-             <h2> I'm a title </h2>
-             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </section>
+        <div class="col-4">
+          <span> im not with the section</span>
+          <section>
+              <div class="module-padding">
+                 <h2> I'm a title </h2>
+                 <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+              </div>
+          </section>
+        </div>
         <section class="col-4">
           <div class="module-margin">
             <h2> I'm a title </h2>
