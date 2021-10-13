@@ -2,7 +2,7 @@
 
 ## Overview
 1. [Day 1](https://github.com/kevinatown/nupaths_web_app/blob/main/week2/lessons/day1.md)
-  + Review of prjects
+  + Review of project
   + More CSS!
 2. [Day 2](https://github.com/kevinatown/nupaths_web_app/blob/main/week2/lessons/day2.md)
   + 
