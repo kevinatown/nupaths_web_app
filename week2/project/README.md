@@ -46,11 +46,11 @@ light-grey: `#dbd1d0`
 offwhite: `#fafae3`
 blue: `#6375c0`
 
-images and icons can be [found here](https://github.com/kevinatown/nupaths_web_app/blob/main/week2/projects/resources)
+images and icons can be [found here](https://github.com/kevinatown/nupaths_web_app/blob/main/week2/project/resources)
 
 ## Mockups
 Zoomed out (not completely to scale): 
-![mock up of full page zoomed out](https://github.com/kevinatown/nupaths_web_app/blob/main/week2/project/week2_proj_zoomed.png?raw=true)
+![mock up of full page zoomed out](https://github.com/kevinatown/nupaths_web_app/blob/main/week2/project/resources/week2_proj_zoomed.png?raw=true)
 
 Header, first section, and sidebar:
 ![Header, first section, and sidebar](https://github.com/kevinatown/nupaths_web_app/blob/main/week2/project/resources/week2_proj_top.png?raw=true)
