@@ -48,15 +48,39 @@ light-grey: `#dbd1d0`
 offwhite: `#fafae3`
 blue: `#6375c0`
 
+images and icons can be [found here](https://github.com/kevinatown/nupaths_web_app/blob/main/week2/projects/resources)
+
 ## Mockups
 Zoomed out (not completely to scale): 
-![mock up of full page zoomed out](https://github.com/kevinatown/nupaths_web_app/blob/main/project/resources/week2_proj_zoomed.png?raw=true)
+![mock up of full page zoomed out](https://github.com/kevinatown/nupaths_web_app/blob/main/week2/project/week2_proj_zoomed.png?raw=true)
 
 Header, first section, and sidebar:
-![Header, first section, and sidebar](https://github.com/kevinatown/nupaths_web_app/blob/main/project/resources/week2_proj_top.png?raw=true)
+![Header, first section, and sidebar](https://github.com/kevinatown/nupaths_web_app/blob/main/week2/project/resources/week2_proj_top.png?raw=true)
 
 Middle section and sidebar:
-![Middle section and sidebar](https://github.com/kevinatown/nupaths_web_app/blob/main/project/resources/week2_proj_mid.png?raw=true)
+![Middle section and sidebar](https://github.com/kevinatown/nupaths_web_app/blob/main/week2/project/resources/week2_proj_mid.png?raw=true)
 
 Bottom section, footer, and sidebar:
-![Bottom section, footer, and sidebar](https://github.com/kevinatown/nupaths_web_app/blob/main/project/resources/week2_proj_bottom.png?raw=true)
+![Bottom section, footer, and sidebar](https://github.com/kevinatown/nupaths_web_app/blob/main/week2/project/resources/week2_proj_bottom.png?raw=true)
+
+## Rubric:
+- Should match (close) to the images and demo i showed
+- Should use semantic HTML
+- Code should be clean and readable
+- No usesless classes/ids
+- No repeated code
+- Correct use of class and id
+- CSS:
+  + grid
+  + flexbox
+  + font-size
+  + justify-content
+  + flex-direction
+  + text-decoration
+  + margin
+  + padding
+  + list-style-type
+  + rgba
+  + background
+  + background-image: url()
+  + font-family
