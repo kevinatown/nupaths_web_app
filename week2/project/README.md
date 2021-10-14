@@ -82,3 +82,4 @@ Bottom section, footer, and sidebar:
   + background
   + background-image: url()
   + font-family
+  + box-shadow
