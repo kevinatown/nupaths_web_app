@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Global Corp</title>
+    <style type="text/css">
+      body {
+       /* margin: 0;*/
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header header"
+            "main sidebar"
+            "footer footer";
+      }
+
+      header {
+        grid-area: header;
+        background: #4a4a4a;
+        color: #fafae3;
+        display: flex;
+        padding: 8px;
+      }
+
+      main {
+        grid-area: main;
+      }
+
+      aside {
+        grid-area: sidebar;
+      }
+
+      footer {
+        grid-area: footer;
+      }
+
+      #company-header {
+        margin: 0;
+      }
+
+      #main-icon {
+        width: 100%;
+        height: auto;
+      }
+
+      #company-header-container {
+        margin-left: 20px;
+      }
+
+      .col-1 {
+        flex: 0 1 8.33%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- header content -->
+    <header>
+      <div class="col-1">
+        <img id="main-icon" src="/resources/globe_hand_img.png"/>
+      </div>
+      <div id="company-header-container">
+        <h1 id="company-header">Global Corp</h1>
+        <span>The world is in our hands</span>
+      </div>
+    </header>
+    <!-- main content -->
+    <main>
+      <p>I'm main content</p>
+    </main>
+    <!-- sidebar content -->
+    <aside>
+      <p>I'm a sidebar</p>
+    </aside>
+    <!-- Footer content -->
+    <footer>
+      <p>im a footer</p>
+    </footer>
+  </body>
+</html>
