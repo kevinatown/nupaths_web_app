@@ -19,10 +19,9 @@
 2. Open VS Code
     - you will be given an option to pick a theme (dont stress too much we can always change this later)
 3. Click on File in the top left
-4. Find your folder (directory) where your code lives.
-5. Click on open
-6. Navigate to and open the directory downloaded in step 1.
-7. Open the intergrated VS Code terminal
+4. Click on open
+5. Navigate to and open the directory downloaded in step 1.
+6. Open the intergrated VS Code terminal
     - View > Terminal
     - The terminal will open at the bottom
     ![terminal overview](https://github.com/kevinatown/nupaths_web_app/blob/main/resources/terminal.png?raw=true)
@@ -32,7 +31,7 @@
             C:\Users\<USER_NAME>\<PATH>\<TO>\project
         ```
 
-8. Installing the devlopment dependencies
+7. Installing the devlopment dependencies
     - Click in the terminal then write or type the following:
     ```cmd
         npm install
