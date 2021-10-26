@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+      .row {
+        border: red 2px solid;
+        height: 500px;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .flex-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .flex-col {
+        height: 500px;
+        flex-direction: column;
+        border: blue 2px solid;
+      }
+
+      .flex-itme {
+        flex-grow: 1;
+      }
+
+      .brd-green {
+        border: green 2px solid;
+        flex-direction: column;
+      }
+
+      .brd-black {
+        border: black 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row flex-container">
+      <div class="flex-container flex-itme brd-green">
+        <h2>item 1</h2>
+        <div>hi</div>
+        <div>hi2</div>
+        <div>hi4</div>
+        <div>hi3</div>
+        <div>hi</div>
+      </div>
+      <div class="flex-container brd-green flex-itme">
+        <h2>item 1.5</h2>
+        <div>hi</div>
+        <div>hi2</div>
+        <div>hi4</div>
+        <div>hi3</div>
+        <div>hi</div>
+      </div>
+      <div class="flex-container brd-green flex-itme">
+        <h2>item 2</h2>
+        <div>hi</div>
+        <div>hi2</div>
+        <div>hi4</div>
+        <div>hi3</div>
+        <div>hi</div>
+      </div>
+    </div>
+    <div class="flex-col flex-container">
+      <div class="flex-itme brd-black">
+        <h2>item 3</h2>
+        <div>hi</div>
+        <div>hi2</div>
+        <div>hi4</div>
+        <div>hi3</div>
+        <div>hi</div>
+      </div>
+      <div class="flex-itme brd-black">
+        <h2>item 4</h2>
+        <div>hi</div>
+        <div>hi2</div>
+        <div>hi4</div>
+        <div>hi3</div>
+        <div>hi</div>
+      </div>
+    </div>
+
+    <div class="flex-container">
+    </div>
+
+  </body>
+</html>
