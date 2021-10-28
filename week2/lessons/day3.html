@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Project 1 My Dashboard hi</title>
+    <style type="text/css">
+      html {
+        background: #fafae3;
+        color: #4a4a4a;
+        font-family: sans-serif;
+      }
+
+      body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header header"
+            "main sidebar"
+            "footer footer";
+      }
+
+      header {
+        grid-area: header;
+        padding: 20px 50px;
+        border-bottom: #4a4a4a solid;
+        background: #4a4a4a;
+        color: #fafae3;
+        box-shadow: 0px 7px 7px 0px #4a4a4a;
+        max-height: 20vh;
+      }
+
+      main {
+        grid-area: main;
+        display: inherit;
+      }
+    
+      footer {
+        grid-area: footer;
+        background: #4a4a4a;
+        color: #fafae3;
+      }
+
+      aside {
+        grid-area: sidebar;
+        height:  100%;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: sans-serif;
+      }
+
+      p {
+        font-family: serif;
+        font-size: 12px;
+      }
+      
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .col-1 {
+        flex: 0 1 8.33%;  /* 1/12 = 8.33% */
+      }
+
+      .col-2 {
+        flex: 0 1 16.66%;  /* 2/12 = 16.66% */
+      }
+
+      .col-3 {
+        flex: 0 1 25%;
+      }
+
+      .col-4 {
+        flex: 0 1 33%;
+      }
+
+      .col-5 {
+        flex: 0 1 41.66%;
+      }
+
+      .col-6 {
+        flex: 0 1 50%;
+      }
+
+      .col-8 {
+        flex: 0 1 66.66%;
+      }
+
+      .col-11 {
+        flex: 0 1 91.66%; 
+      }
+
+      .col-12 {
+        flex: 0 1 100%;  
+      }
+
+      .footer-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      .footer-column-content {
+        padding: 20px;
+      }
+
+      .footer-column > p {
+        padding-right: 50px;
+      }
+
+      #global-corp-logo {
+        max-height: 100%;
+        max-height: 20vh;
+      }
+
+      #title {
+        margin: 15px 0 0 20px;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #main-title {
+        font-size: 4em;
+        margin: 0;
+      }
+
+      #tag-line {
+        text-align: left;
+        width: 100%;
+      }
+
+      nav {
+        display: inline;
+        height: 100%;
+        box-shadow: -5px 0px 7px 0px #4a4a4a;
+      }
+
+      #main-nav {
+        list-style-type: none;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+        margin-top: 100px;
+      }
+
+      #intro {
+        background-image: url('/resources/world.jpeg');
+        background-position: center;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+      }
+
+      #intro > p {
+        padding: 40px;
+        font-size: 40px;
+        max-width: 80%;
+        background: rgba(74, 74, 74, 0.65);
+      }
+
+      #who-we-are {
+        background: #001ca79c;
+        padding: 50px;
+        color: #fff;
+        font-size: 18px;
+      }
+
+      .rounded-border-box {
+        margin: 20px;
+        background: rgb(219, 209, 208, 0.62);;
+        border-radius: 20px;
+        padding:  20px;
+      }
+
+      .center-txt {
+        text-align: center;
+
+      }
+
+      .nav-link {
+        font-family: sans-serif;
+        font-size: 20px;
+        color: #060bb5;
+        margin: 10px;
+        text-decoration: none;
+      }
+
+      .world {
+        max-width: 200px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="row">
+        <div class="col-1">
+          <img src="/resources/globe_hand_img.png" class="world" />
+        </div>
+        <div id="title" class="col-8">
+          <h1 id="main-title">
+            Global Corp
+          </h1>
+          <span id="tag-line">The world is in our hands</span>
+        </div>
+        
+      </div>
+    </header>
+    <main>
+      <section id="intro">
+        <p>
+          Global Corp is the leader in owning the world. 
+        </p>
+        
+      </section>
+      <section id="who-we-are">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et magnis dis parturient montes nascetur ridiculus mus mauris vitae. Id eu nisl nunc mi ipsum faucibus vitae. Tellus id interdum velit laoreet id donec ultrices. Viverra aliquet eget sit amet tellus cras. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Ut lectus arcu bibendum at varius. Viverra mauris in aliquam sem. Malesuada pellentesque elit eget gravida cum sociis. Felis bibendum ut tristique et. Semper auctor neque vitae tempus quam pellentesque nec. In cursus turpis massa tincidunt.
+        </p>
+        <p>
+          Blandit turpis cursus in hac habitasse. Eget duis at tellus at. Velit ut tortor pretium viverra. Ipsum suspendisse ultrices gravida dictum. Sed augue lacus viverra vitae congue eu consequat ac felis. Mi sit amet mauris commodo quis imperdiet massa. Vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci. Iaculis eu non diam phasellus vestibulum lorem. Orci nulla pellentesque dignissim enim. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. Scelerisque varius morbi enim nunc faucibus a.
+        </p>
+        <p>
+          A arcu cursus vitae congue. Elementum sagittis vitae et leo duis ut diam quam nulla. Dignissim convallis aenean et tortor at risus viverra adipiscing. Nibh sit amet commodo nulla facilisi nullam. Interdum varius sit amet mattis vulputate enim nulla aliquet. Integer eget aliquet nibh praesent tristique magna sit amet purus. Ac tortor dignissim convallis aenean. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Malesuada fames ac turpis egestas integer eget aliquet nibh praesent. Aliquam ut porttitor leo a diam sollicitudin tempor. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Id ornare arcu odio ut sem nulla. Ultricies leo integer malesuada nunc. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Mollis nunc sed id semper risus in hendrerit gravida rutrum.
+        </p>
+        
+      </section>
+      <section id="what-we-do">
+        <div class="row">
+          <div class="col-4">
+            <div class="rounded-border-box">
+              <h2 class="center-txt">People</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas integer. Sem fringilla ut morbi tincidunt augue interdum velit euismod. Ligula ullamcorper malesuada proin libero. Donec et odio pellentesque diam volutpat commodo sed egestas. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque.
+              </p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="rounded-border-box">
+              <h2 class="center-txt">The World</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas integer. Sem fringilla ut morbi tincidunt augue interdum velit euismod. Ligula ullamcorper malesuada proin libero. Donec et odio pellentesque diam volutpat commodo sed egestas. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque.
+              </p> 
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="rounded-border-box">
+              <h2 class="center-txt">Domination</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas integer. Sem fringilla ut morbi tincidunt augue interdum velit euismod. Ligula ullamcorper malesuada proin libero. Donec et odio pellentesque diam volutpat commodo sed egestas. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="join-us">
+        
+      </section>
+    </main>
+    <aside>
+      <nav>
+        <ul id="main-nav">
+          <li>
+            <a class="nav-link" href="#intro">
+              Intro
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="#who-we-are">
+              Who we are
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="#what-we-do">
+              What we do
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <footer>
+      <div class="row">
+        <div class="col-4 ">
+          <div class="footer-column">
+            <span>Global Corp</span>
+            <span>1600 Pennsylvania Ave NW</span>
+            <span>Washington, DC 20500</span>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="footer-column">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+  </body>
+</html>
