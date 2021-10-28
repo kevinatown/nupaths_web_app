@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Javascript Intro</title>
+
+  <!-- embeded js -->
+
+  <!-- <script type="text/javascript">
+    console.log('im embeded in the html!');
+    console.warn('im a warning');
+    console.error('Oh no!!')
+    alert('hi darlene im an alert created in javascript!');
+  </script> -->
+  <!-- including a script from another file -->
+  <!-- <script type="text/javascript" src="day2.js"></script> -->
+
+  <script type="text/javascript">
+    const a = {
+      x: 8,
+      y: 7
+    };
+
+    console.log(a.x === 8);
+
+
+    const changeTitleOnLoad = () => {
+      const title = document.getElementById('main-title');
+      console.log('title:', title)
+      title.innerText = 'Hi! I changed this text with js!!';
+      title.setAttribute('class', 'bkg-green txt-purple');
+    };
+
+    window.onload = () => {
+      setTimeout(() => {
+        changeTitleOnLoad();
+      }, 2000);
+    }
+
+  </script>
+
+  <style type="text/css">
+    .bkg-green {
+      background: green;
+    }
+
+    .txt-purple {
+      color: purple;
+    }
+  </style>
+
+</head>
+<body>
+  <h1 id="main-title">Welcome to Javascript!</h1>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+body {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 80% 20%;
+  grid-template-areas:
+    "a a"
+    "b c"
+    "d d"
+  ;
+}
+#header {
+  text-align: center;
+  grid-area: a;
+  border: red 2px solid;
+}
+#main-content {
+  grid-area: b;
+  border: green 2px solid;
+  con
+}
+#idontreallymatterabit {
+  grid-area: c;
+  border: yellow 2px solid;
+}
+#footer {
+  grid-area: d;
+  border: blue 2px solid;
+}
+
+#tic-tak-toe-container {
+  height: 80vh;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-areas:
+    "topL topM topR"
+    "midL midM midR"
+    "btmL btmM btmR";
+}
+
+#tic-tak-toe-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+.brd-top {
+  border-top: black 1px solid;
+}
+
+.brd-btm {
+  border-bottom: black 1px solid;
+}
+
+.brd-l {
+  border-left: black 1px solid;
+}
+
+.brd-r {
+  border-right: black 1px solid;
+}
+
+#topL {
+  grid-area: topL;
+}
+#topM {
+  grid-area: topM;
+}
+#topR {
+  grid-area: topR;
+}
+#midL {
+  grid-area: midL;
+}
+#midM {
+  grid-area: midM;
+}
+#midR {
+  grid-area: midR;
+}
+#btmL {
+  grid-area: btmL;
+}
+#btmM {
+  grid-area: btmM;
+}
+#btmR {
+  grid-area: btmR;
+}
