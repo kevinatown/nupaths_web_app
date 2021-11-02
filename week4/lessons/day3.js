@@ -19,7 +19,7 @@ const a = 1;
 const b = 2;
 
 const aPlusB = addTwoNumbers(a, b);
-const aMinusB = subtractTwoNumbers(a, b);
+const aMinusB = subtractTwoNumbers(3, 5);
 
 const names = [
   'Kevin',
