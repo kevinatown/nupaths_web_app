@@ -52,10 +52,10 @@ names.push('Helen');
 
 // for (let i = 0; i < names.length; i++) {
 //   const currentName = names[i];
-  // console.log('current loop interation:', i, 'Currently checking: ', currentName);
-  // if (currentName[currentName.length - 1] === 'e') {
-  //   // console.log(currentName, ' end with a e');
-  // }
+//   console.log('current loop interation:', i, 'Currently checking: ', currentName);
+//   if (currentName[currentName.length - 1] === 'e') {
+//     // console.log(currentName, ' end with a e');
+//   }
 // }
 // index = index + 1
 // index++ -> only adds 1 
@@ -100,5 +100,6 @@ findNamesEndingWithLetter(
 findNamesEndingWithLetter(
   ['Matt', 'Mint', 'Michael', 'Sarah', 'Katie', 'Rhondat', 'Pete', 'Beverly'],
   't');
+
 
 

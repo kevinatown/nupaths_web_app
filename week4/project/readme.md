@@ -10,10 +10,16 @@ Create a tic tak toe game using javascript.
 * Create buttons and styling for the New Game and Forfit buttons
 * Add some more styling to the page so that it's not the same as i left it
 * Display who's turn it is in the side bar (create a new element for this)
+* Alert the users who won.
+
 
 
 Stretch Goal:
-* Create a function to determin if a player has won.
-* This would require writing an algorithm for this
-* Alert the users who won.
+* Alert the users that the game is over if no one else can play
 
+
+## Helpful code
+javascript```
+alert('Someone has won!!!')
+
+```
