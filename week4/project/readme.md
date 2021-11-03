@@ -19,7 +19,8 @@ Stretch Goal:
 
 
 ## Helpful code
-javascript```
+
+```javascript
 alert('Someone has won!!!')
 
 ```
