@@ -45,6 +45,13 @@ const waysToWin = [
   ['midL', 'midM', 'midR']
 ];
 
+const resetGame = () => {
+  arrayOfBoardSquaresIds.forEach((square) => {
+    boardGameState[square].value = undefined;
+    document.getElementById(square).innerText = '';
+  });
+}
+
 /*
   isGameOver it will determine if the game is over
 
@@ -94,27 +101,30 @@ const onLoad = () => {
       - set up the boardgame state
   */
   arrayOfBoardSquaresIds.forEach((square) => {
-   
     // add an event listener
     document.getElementById(square).addEventListener('click', (event) => {
+      // check if the square state is undefined
+      // if it is add data to it
+      if (boardGameState[square].value === undefined) {
       
-      // check who's turn it is
-      if (isCurrentlyXTurn) {
-        console.log('its X turn');
-        addX(event.target, square);
-      } else {
-        console.log('its O turn');
-        addO(event.target, square);
-      }
+        // check who's turn it is
+        if (isCurrentlyXTurn) {
+          console.log('its X turn');
+          addX(event.target, square);
+        } else {
+          console.log('its O turn');
+          addO(event.target, square);
+        }
 
-      // check if the game is over after every turn
-      const theGameIsOver = isGameOver();
+        // check if the game is over after every turn
+        const theGameIsOver = isGameOver();
 
-      console.log('the game is over: ', theGameIsOver);
+        console.log('the game is over: ', theGameIsOver);
 
-      if (!theGameIsOver) {
-        // flip the value of who's turn to the other one
-        isCurrentlyXTurn = !isCurrentlyXTurn;
+        if (!theGameIsOver) {
+          // flip the value of who's turn to the other one
+          isCurrentlyXTurn = !isCurrentlyXTurn;
+        }
       }
     });
 
@@ -122,8 +132,9 @@ const onLoad = () => {
     boardGameState[square] = {
       value: undefined
     }
-
   });
+
+  document.getElementById('reset-btn').addEventListener('click', resetGame);
 
 };
 
