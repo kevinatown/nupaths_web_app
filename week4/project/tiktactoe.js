@@ -124,6 +124,31 @@ const onLoad = () => {
         if (!theGameIsOver) {
           // flip the value of who's turn to the other one
           isCurrentlyXTurn = !isCurrentlyXTurn;
+
+          // grab the current-turn element and save it for later
+          const currentTurnElement = document.getElementById('current-turn');
+          if (isCurrentlyXTurn) {
+            // set the element's innerText to X if it's X's turn
+            currentTurnElement.innerText = 'X';
+          } else {
+            // set the element's innerText to O if it's NOT X's turn
+            currentTurnElement.innerText = 'O';
+          }
+          
+        } else {
+          // define a string to alert to the user who the winner is
+          let winnerMessage = 'The winner is ';
+
+          if (isCurrentlyXTurn) {
+            // Add X to the message if it's X's turn
+            winnerMessage += 'X';
+          } else {
+            // Add X to the message if it's NOT X's turn
+            winnerMessage += 'O';
+          }
+
+          // alert the user who won with the concatenated message
+          alert(winnerMessage);
         }
       }
     });
@@ -135,7 +160,22 @@ const onLoad = () => {
   });
 
   document.getElementById('reset-btn').addEventListener('click', resetGame);
+  document.getElementById('forfit-btn').addEventListener('click', () => {
+     // define a string to alert to the user who the winner is
+    let loserMessage = 'The loser is ';
 
+    if (isCurrentlyXTurn) {
+      // Add X to the message if it's X's turn
+      loserMessage += 'X';
+    } else {
+      // Add X to the message if it's NOT X's turn
+      loserMessage += 'O';
+    }
+
+    // alert the user who lost with the concatenated message
+    alert(loserMessage);
+    resetGame();
+  });
 };
 
 // setting an event listener on the window to load the game.
