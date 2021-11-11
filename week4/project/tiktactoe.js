@@ -42,7 +42,7 @@ const addX = (element, key) => {
 
 const waysToWin = [
   ['topL', 'topM', 'topR'],
-  ['midL', 'midM', 'midR']
+  ['midL', 'midM', 'midR'],
 ];
 
 const resetGame = () => {
